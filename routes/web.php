@@ -18,3 +18,5 @@ Route::get('/', function () {
 });
 
 Route::get('clubbers', 'ClubberController@getClubbers');
+Route::get('clubber/{id}', 'ClubberController@getClubber');
+

@@ -30,7 +30,7 @@
             @foreach ($clubbers as $clubber)
                 <tr>
                     <th scope="row">{{$clubber->id}}</th>
-                    <td>{{$clubber->name}}</td>
+                    <td><a href="/clubber/{{$clubber->id}}">{{$clubber->name}}</a></td>
                     <td>{{$clubber->money}}</td>
                     <td>
                         <div class="progress">
