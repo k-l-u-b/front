@@ -20,7 +20,7 @@
                 <th scope="col">#</th>
                 <th scope="col">Name</th>
                 <th scope="col">Money</th>
-                <th scope="col">Satisfaction</th>
+                <th scope="col">Anxious | Satisfied</th>
                 <th scope="col">Bizarre | Alluring</th>
                 <th scope="col">Introvert | Exuberant</th>
 
@@ -34,7 +34,7 @@
                     <td>{{$clubber->money}}</td>
                     <td>
                         <div class="progress">
-                            <div class="progress-bar bg-success" role="progressbar" style="width: {{$clubber->satisfaction}}%" aria-valuenow="{{$clubber->bizarre_alluring}}" aria-valuemin="-100" aria-valuemax="100"></div>
+                            <div class="progress-bar bg-success" role="progressbar" style="width: {{($clubber->anxious_satisfied+100)/200*100}}%" aria-valuenow="{{$clubber->bizarre_alluring}}" aria-valuemin="-100" aria-valuemax="100"></div>
                         </div>
                     </td>
                     <td>
